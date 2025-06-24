@@ -10,18 +10,30 @@
     </head>
     <body>
         <main>
+            <dialog id="player-info-dialog">
+                <label for="player-name1">Input Player 1's name (X)</label>
+                <input type="text" name="player-name1" id="player-name1" placeholder="player1" required>
+                <hr>
+                <label for="player-name2">Input Player 2's name (O)</label>
+                <input type="text" name="player-name2" id="player-name2" placeholder="player2" required>
+                <br>
+                <button id="start-game">Start Game</button>
+            </dialog>
+
+            <p id="info"></p>
             <div id="game-board">
-                <button id="0" class="board-tile"></button>
-                <button id="1" class="board-tile"></button>
-                <button id="2" class="board-tile"></button>
-                <button id="3" class="board-tile"></button>
-                <button id="4" class="board-tile"></button>
-                <button id="5" class="board-tile"></button>
-                <button id="6" class="board-tile"></button>
-                <button id="7" class="board-tile"></button>
-                <button id="8" class="board-tile"></button>
+                <button id="bt0" class="board-tile"></button>
+                <button id="bt1" class="board-tile"></button>
+                <button id="bt2" class="board-tile"></button>
+                <button id="bt3" class="board-tile"></button>
+                <button id="bt4" class="board-tile"></button>
+                <button id="bt5" class="board-tile"></button>
+                <button id="bt6" class="board-tile"></button>
+                <button id="bt7" class="board-tile"></button>
+                <button id="bt8" class="board-tile"></button>
             </div>
-            <input type="text" name="" id="">
+
+            <dialog id="winning-dialog"></dialog>
         </main>
         
         <script src="script.js" async defer></script>
