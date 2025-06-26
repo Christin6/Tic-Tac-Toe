@@ -1,11 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+:root {
+    --bg-color: #1d336f;
+    --fg-color: #848fb0;
+    --text-color: white;
+    --font-regular: 400;
+    --font-bold: 700;
+}
+
+html {
+    background-color: var(--bg-color);
+    font-family: "Play", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#info {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: var(--font-bold);
+}
+
 #game-board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: max-content;
+    gap: 0.7rem;
 }
 
 .board-tile {
-    height: 2rem;
-    width: 2rem;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--fg-color);
+    color: var(--text-color);
+    font-size: 6rem;
+}
+
+dialog {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+}
+
+dialog button {
+    background-color: var(--fg-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: var(--font-bold);
+    margin: 1rem 0.5rem;
+}
+
+input {
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.2rem 0.7rem;
+    margin-left: 0.5rem;
 }

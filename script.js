@@ -28,7 +28,7 @@ const gameBoard = (function () {
 			info.textContent = "Fill the empty box only!";
 
             setTimeout(() => {
-                updateTurnDisplay();
+                controller.updateTurnDisplay();
             }, 2000);
 
             return false;
@@ -114,7 +114,7 @@ const gameBoard = (function () {
 	return { fillBoard, checkPlayerWin, checkTie };
 })();
 
-(function controller() {
+const controller = (function() {
     const playerInfoDialog = document.getElementById("player-info-dialog");
     const player1Input = document.getElementById("player-name1");
     const player2Input = document.getElementById("player-name2");
@@ -184,5 +184,5 @@ const gameBoard = (function () {
         }
     }
 
-    window.updateTurnDisplay = updateTurnDisplay;
+    return { updateTurnDisplay };
 })();
